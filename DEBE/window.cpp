@@ -84,7 +84,7 @@ QString weiToEth(QString str){
     while(str[i] == "0")
         i--;
     str.chop(str.size() - i - 1);
-    if(str.back() == ".")
+    if(str[str.size() - 1] == ".")
         str.push_back("0");
     return str;
 }
